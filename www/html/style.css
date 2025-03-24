@@ -1,0 +1,156 @@
+:root {
+    font-size: 100%;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+
+body {
+    box-sizing: border-box;
+    min-height: 100vh;
+    margin: 0;
+    padding: 1rem;
+}
+
+
+#search-in-progress {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    cursor: wait !important;
+    z-index: 999;
+    background-color: #ffffff7f;
+}
+
+div {
+    margin: 1rem 0;
+}
+
+input {
+    min-width: 50vw;
+    padding: 0.25rem;
+    border: 1px solid #8f8f9d;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+ul {
+    padding: 0;
+}
+
+button, .button {
+    display: inline-block;
+    padding: 0.25rem;
+    min-width: 5rem;
+    color: black;
+    background-color: #e9e9ed;
+    border: 1px solid #8f8f9d;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1rem;
+}
+
+button:enabled:hover, .button:hover {
+    background-color: #d0d0d7;
+    border: 1px solid #676774;
+    border-radius: 5px;
+}
+
+button:enabled {
+    cursor: pointer;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    background-color: #f4f4f6;
+    border: 1px solid #c7c7ce;
+    border-radius: 5px;
+    color: #3f3f3f;
+}
+
+#search-result {
+    margin: 1rem 0;
+}
+
+#search-result-list > li {
+    margin: 1rem 0;
+    padding: 1rem;
+    list-style: none;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 0.5rem #0000007f;
+    /* border-top: 1px solid black;
+    border-bottom: 1px solid black; */
+}
+
+#search-result-list > li > div {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 0;
+}
+
+.popup-container {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: #0000007f;
+    z-index: 99;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.popup {
+    background-color: white;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 90vw;
+    max-height: 90vh;
+    text-align: center;
+}
+
+.popup-content-container {
+    overflow-y: scroll;
+}
+
+#pos button {
+    min-width: unset;
+    width: 2.5rem;
+    margin: 0 0.1rem;
+}
+
+#pos button.current {
+    cursor: default;
+    background: none;
+    color: black;
+    border: none;
+}
+
+ol {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    margin-left: -1rem;
+}
+
+ol li {
+    margin-left: 2rem;
+}
+
+ul li h3 {
+    margin-top: 0;
+}

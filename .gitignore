@@ -1,0 +1,6 @@
+*test*
+.vscode/
+docker/.env
+www/config/connect-param.php
+data/
+logs/

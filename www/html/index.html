@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="main.js"></script>
+</head>
+<body>
+    <a href="/dblp/" class="button">Get more publications on dblp</a>
+    <div id="search-in-progress" style="display: none;"></div>
+    <div>
+        <input type="search" name="search" id="search-input" placeholder="Search...">
+        <button type="button" id="search-button">Search</button>
+    </div>
+    <div id="search-result">
+        <div>
+            <button type="button" id="first-button" disabled>First</button>
+            <button type="button" id="prev-button" disabled>Previous</button>
+            <span id="pos"></span>
+            <button type="button" id="next-button" disabled>Next</button>
+            <button type="button" id="last-button" disabled>Last</button>
+        </div>
+        <ul id="search-result-list">
+        </ul>
+    </div>
+</body>
+</html>
