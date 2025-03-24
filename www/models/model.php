@@ -130,7 +130,7 @@ class Model {
                         );
         foreach ($authors as $author_order => $author) {
             if (!$this->author_exists($author['author_pid'])) {
-                $this->create_author($author['author_pid'], $author['author_text']);
+                $this->create_author($author['author_pid'], html_entity_decode($author['author_text']));
             }
             $this->insert_into_author_publish($author['author_pid'], $publication_id, $author_order);
         }
