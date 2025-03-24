@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const olAuthor = document.createElement("ol");
         for (const author of hit.authors) {
             const liAuthor = document.createElement("li");
-            liAuthor.innerText = author.author_text;
+            liAuthor.innerHTML = author.author_text;
             olAuthor.appendChild(liAuthor);
         }
         divAuthors.appendChild(olAuthor);

@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (hit.info.authors.author.constructor === Array) {
             for (const author of hit.info.authors.author) {
                 const liAuthor = document.createElement("li");
-                liAuthor.innerText = author.text;
+                liAuthor.innerHTML = author.text;
                 olAuthor.appendChild(liAuthor);
             }
         } else {
