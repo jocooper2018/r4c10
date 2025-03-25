@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         const divTitle = document.createElement("div");
         const spanTitle = document.createElement("h3");
-        spanTitle.innerText = hit.info.title;
+        spanTitle.innerHTML = hit.info.title;
         divTitle.appendChild(spanTitle);
         li.appendChild(divTitle);
 
@@ -47,16 +47,16 @@ document.addEventListener("DOMContentLoaded", () => {
         spanYear.innerText = hit.info.year;
         divYearType.appendChild(spanYear);
         const spanType = document.createElement("span");
-        spanType.innerText = hit.info.type;
+        spanType.innerHTML = hit.info.type;
         divYearType.appendChild(spanType);
         li.appendChild(divYearType);
 
         const divVenuePages = document.createElement("div");
         const spanVenue = document.createElement("span");
-        spanVenue.innerText = hit.info.venue;
+        spanVenue.innerHTML = hit.info.venue;
         divVenuePages.appendChild(spanVenue);
         const spanPages = document.createElement("span");
-        spanPages.innerText = hit.info.pages;
+        spanPages.innerHTML = hit.info.pages;
         divVenuePages.appendChild(spanPages);
         li.appendChild(divVenuePages);
 
