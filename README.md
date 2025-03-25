@@ -30,10 +30,10 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
 
  6. Add a new server:
 
-      - `General` Tab
+      - `General` tab
           - Name: Choose a name, e.g. `r4c10`.
 
-      - `Connection` Tab
+      - `Connection` tab
           - Host name/address: `postgresdb` (Name of the PostgreSQL service in `docker/docker-compose.yml`)
           - Port&nbsp;: `5432`
           - Maintenance database: `DB_NAME` value in `docker/.env`.
