@@ -1,0 +1,8 @@
+<?php
+trait ConnectionParam {
+    private string $server = 'postgresdb';
+    private string $driver = 'pgsql';
+    private string $dbname = 'r4c10';
+    private string $user   = 'r4c10';
+    private string $pass   = 'r4c10_password';
+}
