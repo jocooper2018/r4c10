@@ -1,7 +1,7 @@
 *test*
 .vscode/
 docker/.env
-www/config/connect-param.php
 data/
-logs/
-www/html/v-php/index.php
+www/config/connect-param.php
+www/logs/
+www/html/v-php/
