@@ -1,6 +1,6 @@
 # R4.C.10 - Analysis and advanced data visualization
 
-## Serveur local de test avec `docker compose`
+## Setup the app
 
 If you have an old version of Docker (less than `20.10.13`),
 use `docker-compose` with a dash instead of `docker compose` without a dash.
