@@ -12,7 +12,7 @@ services:
       POSTGRES_DB: ${DB_NAME}
       PGDATA: /var/lib/postgresql/data/pgdata
     networks:
-      - sae
+      - r4c10
 
   web:
     container_name: web
@@ -24,7 +24,7 @@ services:
     environment:
       VIRTUAL_HOST: localhost
     networks:
-      - sae
+      - r4c10
     depends_on:
       - postgresdb
 
@@ -39,9 +39,9 @@ services:
       PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_PASSWORD}
       PGADMIN_DISABLE_POSTFIX: true
     networks:
-      - sae
+      - r4c10
     depends_on:
       - postgresdb
 
 networks:
-  sae:
+  r4c10:
