@@ -1,4 +1,4 @@
-# Projet R4.C.10
+# R4.C.10 - Analyse et visualisation avancée des données
 
 ## Serveur local de test avec `docker compose`
 
