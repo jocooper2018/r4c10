@@ -24,7 +24,7 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
 
  5. Open pgAdmin at `http://localhost:${PGADMIN_PORT}/`.
     Replace `${PGADMIN_PORT}` with the value of `PGADMIN_PORT` in `docker/.env` (default `8081`).
-      - Email Address / Username: `${PGADMIN_EMAIL}@dbadmin-sae.com`
+      - Email Address / Username: `${PGADMIN_EMAIL}@dbadmin.com`
         Replace `${PGADMIN_EMAIL}` with the value of `PGADMIN_EMAIL` in `docker/.env`.
       - Password: Value of `PGADMIN_PASSWORD` in `docker/.env`.
 
