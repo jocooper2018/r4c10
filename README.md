@@ -30,7 +30,7 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
  3. Do the same with `www/config/connect-param.php.example`.
     Make sure the values are the same in both files.
 
- 4. Start the server the first time: in a terminal, go to the `docker/` folder, then run:
+ 4. Start the server a first time: in a terminal, go to the `docker/` folder, then run:
     - Linux (bash): `docker compose up --build && docker compose logs -f`.
     - Windows (Powershell as administrator): `docker compose up --build; if ($?) { docker compose logs -f }`
 
