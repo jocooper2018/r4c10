@@ -10,7 +10,7 @@ On the main page (`/`), you can search bibliographic references in the local dat
 
 ### Prerequisites
 
-You must have docker installed on your computer.
+You must have [docker](https://www.docker.com/) installed on your computer.
 
 If you have an old version of Docker (less than `20.10.13`),
 use `docker-compose` with a dash instead of `docker compose` without a dash.
