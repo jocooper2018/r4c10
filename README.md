@@ -1,6 +1,16 @@
 # R4.C.10 - Analysis and advanced data visualization
 
+## App overview
+
+On the page `/dblp/`, you can search bibliographic references on dblp and store them in a local database.
+
+On the main page (`/`), you can search bibliographic references in the local database.
+
 ## Setup the app
+
+### Prerequisites
+
+You must have docker installed on your computer.
 
 If you have an old version of Docker (less than `20.10.13`),
 use `docker-compose` with a dash instead of `docker compose` without a dash.
@@ -8,6 +18,8 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
 ### Installation
 
  1. Clone the project.
+    - via HTTPS: `git clone https://github.com/jocooper2018/r4c10.git`
+    - via SSH: `git clone git@github.com:jocooper2018/r4c10.git`
 
  2. Copy the `docker/.env.example` file to `docker/.env`
     (`cp docker/.env.example docker/.env` from the project root).
@@ -19,29 +31,29 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
     Make sure the values are the same in both files.
 
  4. Start the server the first time: in a terminal, go to the `docker/` folder, then run:
-      - Linux (bash): `docker compose up --build && docker compose logs -f`.
-      - Windows (Powershell as administrator): `docker compose up --build; if ($?) { docker compose logs -f }`
+    - Linux (bash): `docker compose up --build && docker compose logs -f`.
+    - Windows (Powershell as administrator): `docker compose up --build; if ($?) { docker compose logs -f }`
 
  5. Open pgAdmin at `http://localhost:${PGADMIN_PORT}/`.
     Replace `${PGADMIN_PORT}` with the value of `PGADMIN_PORT` in `docker/.env` (default `8081`).
-      - Email Address / Username: `${PGADMIN_EMAIL}@dbadmin.com`
-        Replace `${PGADMIN_EMAIL}` with the value of `PGADMIN_EMAIL` in `docker/.env`.
-      - Password: Value of `PGADMIN_PASSWORD` in `docker/.env`.
+    - Email Address / Username: `${PGADMIN_EMAIL}@dbadmin.com`
+      Replace `${PGADMIN_EMAIL}` with the value of `PGADMIN_EMAIL` in `docker/.env`.
+    - Password: Value of `PGADMIN_PASSWORD` in `docker/.env`.
 
  6. Add a new server:
 
-      - `General` tab
-          - Name: Choose a name, e.g. `r4c10`.
+    - `General` tab
+        - Name: Choose a name, e.g. `r4c10`.
 
-      - `Connection` tab
-          - Host name/address: `postgresdb` (Name of the PostgreSQL service in `docker/docker-compose.yml`)
-          - Port&nbsp;: `5432`
-          - Maintenance database: `DB_NAME` value in `docker/.env`.
-          - Username: `DB_USER` value in `docker/.env`.
-          - Kerberos authentication?: `off`
-          - Password: `DB_ROOT_PASSWORD` value in `docker/.env`.
+    - `Connection` tab
+        - Host name/address: `postgresdb` (Name of the PostgreSQL service in `docker/docker-compose.yml`)
+        - Port&nbsp;: `5432`
+        - Maintenance database: `DB_NAME` value in `docker/.env`.
+        - Username: `DB_USER` value in `docker/.env`.
+        - Kerberos authentication?: `off`
+        - Password: `DB_ROOT_PASSWORD` value in `docker/.env`.
 
-        Leave the rest to default values.
+    Leave the rest to default values.
 
  7. Select the database and open the query tool (`Alt` + `Shift` + `Q`)
 
