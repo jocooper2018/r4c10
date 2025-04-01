@@ -63,7 +63,7 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
 
     ![The button with an arrow](readme-images/execute-script.webp)
 
-### Starting the server
+### Start the server
 
 To start the server, open a terminal in `docker/` and run:
 
