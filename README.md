@@ -29,6 +29,7 @@ use `docker-compose` with a dash instead of `docker compose` without a dash.
     so don't modify it or put any sensitive information in it.
 
  3. Do the same with `www/config/connect-param.php.example`.
+    Copy it to `www/config/connect-param.php`.
     Make sure the values are the same in both files.
 
  4. Start the server a first time: in a terminal, go to the `docker/` folder, then run:
