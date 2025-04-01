@@ -3,6 +3,7 @@
 ## App overview
 
 On the page `/dblp/`, you can search bibliographic references on dblp and store them in a local database.
+Only `Conference and Workshop Papers` and `Journal Articles` are saved.
 
 On the main page (`/`), you can search bibliographic references in the local database.
 
